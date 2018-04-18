@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>协同作业平台</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" >
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" >
+    <!-- <script id="yyfaxapm-javascript-sdk" src="//apm.yylending.com/lib/monitor.min.js?appid=KP4Sjqufr0"></script> -->
+    <!--[if !IE]><!--><script>
+    if (/*@cc_on!@*/false) {
+        document.documentElement.className+=' ie10';
+    }
+    </script><!--<![endif]-->
+    <script>
+        var version = '<%= htmlWebpackPlugin.options.version %>';
+        var isDev = '<%= htmlWebpackPlugin.options.isDev %>';
+        // if (!String.prototype.startsWith) {
+        //     String.prototype.startsWith = function (searchString, position) {
+        //         return this.substr(position || 0, searchString.length) === searchString;
+        //     };
+        // }
+
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<%= htmlWebpackPlugin.options.isDev == 'true'? '<script src="./vendor.dll.js" ></script>' : '' %>
+<!-- <script src="/js/flexpaper/js/jquery.min.js" defer></script> -->
+<!-- <script src="/js/flexpaper/js/flexpaper.js" defer></script> -->
+<!-- <script src="/js/flexpaper/js/flexpaper_handlers.js" defer></script> -->
+</body>
+</html>
